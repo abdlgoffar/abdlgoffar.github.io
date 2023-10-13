@@ -11,39 +11,176 @@
             font-family: 'Roboto', sans-serif;
         }
         /* BUTTON */
-        .button-92 {
-          --c: #fff;
-          background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
-            #004dff;
-          color: #0000;
-          border: none;
-          transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
-          text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
-            calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
-          outline-offset: .1em;
-          transition: 0.3s;
+
+        .btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 13rem;
+          overflow: hidden;
+          height: 3rem;
+          background-size: 300% 300%;
+          backdrop-filter: blur(1rem);
+          /* border-radius: 5rem; */
+          transition: 0.5s;
+          animation: gradient_301 5s ease infinite;
+          border: double 4px transparent;
+          background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #e04ee7 10%,#e153fe 45%, #8F51EA 67%, #0044ff 87%);
+          background-origin: border-box;
+          background-clip: content-box, border-box;
         }
 
-        .button-92:hover,
-        .button-92:focus-visible {
-          --_p: 0%;
-          --_i: 1;
+        #container-stars {
+          position: absolute;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          transition: 0.5s;
+          backdrop-filter: blur(1rem);
+          border-radius: 5rem;
         }
 
-        .button-92:active {
-          text-shadow: none;
-          color: var(--c);
-          box-shadow: inset 0 0 9e9q #0005;
-          transition: 0s;
+        strong {
+          z-index: 2;
+          font-family: 'Avalors Personal Use';
+          font-size: 12px;
+          letter-spacing: 5px;
+          color: #FFFFFF;
+          text-shadow: 0 0 4px white;
         }
 
-        .button-92 {
-          font-weight: bold;
-          font-size: 2rem;
-          margin: 0;
-          cursor: pointer;
-          padding: .1em .3em;
+        #glow {
+          position: absolute;
+          display: flex;
+          width: 12rem;
         }
+
+        .circle {
+          width: 100%;
+          height: 30px;
+          filter: blur(2rem);
+          animation: pulse_3011 4s infinite;
+          z-index: -1;
+        }
+
+        .circle:nth-of-type(1) {
+          background: rgba(27, 202, 255, 0.636);
+        }
+
+        .circle:nth-of-type(2) {
+          background: rgba(142, 81, 234, 0.704);
+        }
+
+        .btn:hover #container-stars {
+          z-index: 1;
+          background-color: #212121;
+        }
+
+        .btn:hover {
+          transform: scale(1.1)
+        }
+
+        .btn:active {
+          border: double 4px #FE53BB;
+          background-origin: border-box;
+          background-clip: content-box, border-box;
+          animation: none;
+        }
+
+        .btn:active .circle {
+          background: #FE53BB;
+        }
+
+        #stars {
+          position: relative;
+          background: transparent;
+          width: 200rem;
+          height: 200rem;
+        }
+
+        #stars::after {
+          content: "";
+          position: absolute;
+          top: -10rem;
+          left: -100rem;
+          width: 100%;
+          height: 100%;
+          animation: animStarRotate 90s linear infinite;
+        }
+
+        #stars::after {
+          background-image: radial-gradient(#ffffff 1px, transparent 1%);
+          background-size: 50px 50px;
+        }
+
+        #stars::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -50%;
+          width: 170%;
+          height: 500%;
+          animation: animStar 60s linear infinite;
+        }
+
+        #stars::before {
+          background-image: radial-gradient(#ffffff 1px, transparent 1%);
+          background-size: 50px 50px;
+          opacity: 0.5;
+        }
+
+        @keyframes animStar {
+          from {
+            transform: translateY(0);
+          }
+
+          to {
+            transform: translateY(-135rem);
+          }
+        }
+
+        @keyframes animStarRotate {
+          from {
+            transform: rotate(360deg);
+          }
+
+          to {
+            transform: rotate(0);
+          }
+        }
+
+        @keyframes gradient_301 {
+          0% {
+            background-position: 0% 50%;
+          }
+
+          50% {
+            background-position: 100% 50%;
+          }
+
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        @keyframes pulse_3011 {
+          0% {
+            transform: scale(0.75);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+          }
+
+          70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+          }
+
+          100% {
+            transform: scale(0.75);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          }
+        }
+    
         /* CARD SKILLS */
         .card-skills {
           width: 300px;
@@ -178,6 +315,44 @@
         fill: #c13584;
       }
 
+      /* mobile  */
+      @media only screen and (max-width: 600px) {
+        .col-me {
+          width: 97%;
+        }
+        .animate-charcter {
+          font-size: 0.9rem;
+        }
+      }
+      /* text animation */
+      .animate-charcter {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+          -225deg,
+          #231557 0%,
+          #44107a 29%,
+          #9113ff 67%,
+          #00f7ff 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        
+      }
+
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+
     </style>
   </head>
   <body>
@@ -191,12 +366,28 @@
                     <div class="card-group">
                         <div class="card rounded-0" style="border: none;">
                           <div class="card-body">
-                            <p class="text-start text-primary fst-italic">work closely with me in the field of application development</p>
+                            <h5 class="text-start text-primary fst-italic animate-charcter" style="">work closely with me in the field of application development</h5>
                             <h1 class="text-start">I'm Software Enginering</h1>
-                            <p class="text-start">I am Abdul Goffar, I am a computer engineering student, I have a hobby of learning coding or computer programming, especially developing WEB applications and mobile applications.
+                            <p class="text-start" style="text-align: justify;">I am Abdul Goffar, I am a computer engineering student, I have a hobby of learning coding or computer programming, especially developing WEB applications and mobile applications.
                             </p>
                             <span></span>
-                            <div class="float-start" style="margin-left: -18px;"><button class="button-92" role="button">Download My CV</button></div>
+
+                            <!-- <div class="float-start" style="margin-left: -18px;"><button class="button-92" role="button">Download My CV</button></div> -->
+
+                            <div class="float-start">
+                              <button class="btn" type="button">
+                                <strong>DOWNLOAD CV</strong>
+                                <div id="container-stars">
+                                  <div id="stars"></div>
+                                </div>
+                              
+                                <div id="glow">
+                                  <div class="circle"></div>
+                                  <div class="circle"></div>
+                                </div>
+                              </button>
+                            </div>
+
                             <a href="document/CV Goffar.pdf" download="file"></a>
 
                           </div>
@@ -259,28 +450,31 @@
     <div class="row" id="about-target">
       <div class="col-sm-12">
         <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
           <div class="col">
             <div class="card h-100 rounded-0"  style="border: none;">
               <div class="card-body">
-                <div class="list-group" style="width: 300px; margin: auto;">
-                  <button type="button" class="list-group-item list-group-item-action active py-4" aria-current="true" style="background-color: #4646ff;">
-                    Personal Data
-                  </button>
-                  <button type="button" class="list-group-item list-group-item-action">Name: Abdul Goffar</button>
-                  <button type="button" class="list-group-item list-group-item-action">Date Of Bird: Sampang, 01-07-2001</button>
-                  <button type="button" class="list-group-item list-group-item-action">Telephone: +82 131876127</button>
-                  <button type="button" class="list-group-item list-group-item-action">Address: Jl. Jaksa Agung Suprapto</button>
-                  <button type="button" class="list-group-item list-group-item-action">Regency: Sampang</button>
-                  <button type="button" class="list-group-item list-group-item-action">Province: East Java</button>
-                  <button type="button" class="list-group-item list-group-item-action">Country: Indonesia</button>
+                <div class="card-skills col-me" style="margin: auto;">
+                  <div class="header">Framework Skills</div>
+                  <div class="body">
+                    <p>Name: Abdul Goffar</p>
+                    <p>Date Of Bird: Sampang, 01-07-2001</p>
+                    <p>Contact: 085843480959</p>
+                    <p>Address: Jl. Jaksa Agung Suprapto</p>
+                    <p>Regency: Sampang</p>
+                    <p>Province: East Java</p>
+                    <p>Country: Indonesia</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+    
           <div class="col">
             <div class="card h-100 rounded-0"  style="border: none;">
               <div class="card-body">
-                <div class="card-skills" style="margin: auto;">
+                <div class="card-skills col-me" style="margin: auto;">
                   <div class="header">Programming Languange Skills</div>
                   <div class="body">
                     <div class="skill">
@@ -351,10 +545,12 @@
               </div>
             </div>
           </div>
+
+          
           <div class="col">
             <div class="card h-100 rounded-0"  style="border: none;">
               <div class="card-body">
-                <div class="card-skills" style="margin: auto;">
+                <div class="card-skills col-me" style="margin: auto;">
                   <div class="header">Framework Skills</div>
                   <div class="body">
                     <div class="skill">
@@ -397,6 +593,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
