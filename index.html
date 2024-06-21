@@ -6,9 +6,13 @@
     <title>ABDULGOFFAR</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+      
+      @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poetsen+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
         * {
-            font-family: 'Roboto', sans-serif;
+          font-family: "Poetsen One", sans-serif;
+          font-weight: 400;
+          font-style: normal;
         }
         /* BUTTON */
 
@@ -25,7 +29,7 @@
           transition: 0.5s;
           animation: gradient_301 5s ease infinite;
           border: double 4px transparent;
-          background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #e04ee7 10%,#e153fe 45%, #8F51EA 67%, #0044ff 87%);
+          background-image: linear-gradient(#ea00ff, #6b00b3),  linear-gradient(137.48deg, #e04ee7 10%,#e153fe 45%, #8F51EA 67%, #0044ff 87%);
           background-origin: border-box;
           background-clip: content-box, border-box;
         }
@@ -74,7 +78,7 @@
 
         .btn:hover #container-stars {
           z-index: 1;
-          background-color: #212121;
+          background-color: #a033e9;
         }
 
         .btn:hover {
@@ -183,7 +187,7 @@
     
         /* CARD SKILLS */
         .card-skills {
-          width: 300px;
+          width: 100%;
           background-color: #fff;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
           border-radius: 10px;
@@ -191,9 +195,9 @@
         }
         
         .header {
-          background-color: #4040ff;
+          background-color: #6b2cd9;
           color: #fff;
-          padding: 20px;
+          padding: 30px;
           text-align: center;
           font-size: 18px;
         }
@@ -297,6 +301,7 @@
 
       .linkedin svg {
         fill: #f2f2f2;
+        
       }
 
       .linkedin:hover svg {
@@ -318,7 +323,7 @@
       /* mobile  */
       @media only screen and (max-width: 600px) {
         .col-me {
-          width: 97%;
+          width: 100%;
         }
         .animate-charcter {
           font-size: 0.9rem;
@@ -356,253 +361,164 @@
     </style>
   </head>
   <body>
-    <!-- section navigation bar -->
+
+    <div class="container-fluid">
+ <!-- section navigation bar -->
     
     <!-- section row one -->
-     <div class="row">
-        <div class="col-sm-12">
-            <div class="card text-center rounded-0"  style="border: none;">
-                <div class="card-body">
-                    <div class="card-group">
-                        <div class="card rounded-0" style="border: none;">
-                          <div class="card-body">
-                            <h5 class="text-start text-primary fst-italic animate-charcter" style="">work closely with me in the field of application development</h5>
-                            <h1 class="text-start">I'm Software Enginering</h1>
-                            <p class="text-start" style="text-align: justify;">I am Abdul Goffar, I am a computer engineering student, I have a hobby of learning coding or computer programming, especially developing WEB applications and mobile applications.
-                            </p>
-                            <span></span>
-
-                            <!-- <div class="float-start" style="margin-left: -18px;"><button class="button-92" role="button">Download My CV</button></div> -->
-
-                            <div class="float-start">
-                              <button class="btn" type="button">
-                                <strong>DOWNLOAD CV</strong>
-                                <div id="container-stars">
-                                  <div id="stars"></div>
-                                </div>
-                              
-                                <div id="glow">
-                                  <div class="circle"></div>
-                                  <div class="circle"></div>
-                                </div>
-                              </button>
-                            </div>
-
-                            <a href="document/Resume_CV.pdf" download="file"></a>
-
-                          </div>
-                        </div>
-                        <div class="card rounded-0" style="border: none;">
-                            <div class="card-body">
-                                <img src="img/Goffar_2024.jpg" alt="" width="310px" height="310px" style="border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%">
-                            </div>
-                        </div>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4040ff" fill-opacity="1" d="M0,0L8.3,21.3C16.6,43,33,85,50,106.7C66.2,128,83,128,99,112C115.9,96,132,64,149,48C165.5,32,182,32,199,32C215.2,32,232,32,248,32C264.8,32,281,32,298,80C314.5,128,331,224,348,245.3C364.1,267,381,213,397,192C413.8,171,430,181,447,170.7C463.4,160,480,128,497,144C513.1,160,530,224,546,250.7C562.8,277,579,267,596,224C612.4,181,629,107,646,90.7C662.1,75,679,117,695,122.7C711.7,128,728,96,745,85.3C761.4,75,778,85,794,117.3C811,149,828,203,844,197.3C860.7,192,877,128,894,85.3C910.3,43,927,21,943,16C960,11,977,21,993,26.7C1009.7,32,1026,32,1043,42.7C1059.3,53,1076,75,1092,90.7C1109,107,1126,117,1142,112C1158.6,107,1175,85,1192,96C1208.3,107,1225,149,1241,160C1257.9,171,1274,149,1291,160C1307.6,171,1324,213,1341,218.7C1357.2,224,1374,192,1390,170.7C1406.9,149,1423,139,1432,133.3L1440,128L1440,320L1431.7,320C1423.4,320,1407,320,1390,320C1373.8,320,1357,320,1341,320C1324.1,320,1308,320,1291,320C1274.5,320,1258,320,1241,320C1224.8,320,1208,320,1192,320C1175.2,320,1159,320,1142,320C1125.5,320,1109,320,1092,320C1075.9,320,1059,320,1043,320C1026.2,320,1010,320,993,320C976.6,320,960,320,943,320C926.9,320,910,320,894,320C877.2,320,861,320,844,320C827.6,320,811,320,794,320C777.9,320,761,320,745,320C728.3,320,712,320,695,320C678.6,320,662,320,646,320C629,320,612,320,596,320C579.3,320,563,320,546,320C529.7,320,513,320,497,320C480,320,463,320,447,320C430.3,320,414,320,397,320C380.7,320,364,320,348,320C331,320,314,320,298,320C281.4,320,265,320,248,320C231.7,320,215,320,199,320C182.1,320,166,320,149,320C132.4,320,116,320,99,320C82.8,320,66,320,50,320C33.1,320,17,320,8,320L0,320Z"></path></svg>
-                </div>
-                
-                
-                <div class="card-footer text-muted">
-                  <div class="social-buttons">
-                    <a href="https://github.com/abdlgoffar" class="social-button github">
-                      <svg class="cf-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19"><path d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z"></path></svg>
-                        </a>
-                        <a href="https://linkedin.com/in/goffar-489944271%7C" class="social-button linkedin">
-                          <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <g id="Icons" stroke="none" stroke-width="1">
-                              <g transform="translate(-702.000000, -265.000000)">
-                                  <path d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z" id="LinkedIn">
-                      </path>
-                              </g>
-                          </g>
-                      </svg>
-                    </a>
-                    <a href="https://www.facebook.com/abd.gofar.5492" class="social-button facebook">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
-                  <g id="XMLID_834_">
-                    <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
-                      c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
-                      V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
-                      C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
-                      c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"></path>
-                  </g>
-                  </svg>
-                    </a>
-                    <a href="https://www.instagram.com/abdlgoffar" class="social-button instagram">
-                      <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1">
-                          <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
-                              <g id="icons" transform="translate(56.000000, 160.000000)">
-                                  <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
-                  
-                  </path>
-                              </g>
-                          </g>
-                      </g>
-                  </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </div>
-    <!-- section row two -->
-    <div class="row" id="about-target">
+    <div class="row">
       <div class="col-sm-12">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-
-
-          <div class="col">
-            <div class="card h-100 rounded-0"  style="border: none;">
+          <div class="card text-center rounded-0"  style="border: none;">
               <div class="card-body">
-                <div class="card-skills col-me" style="margin: auto;">
-                  <div class="header">About Me</div>
-                  <div class="body">
-                    <p>Name: Abdul Goffar</p>
-                    <p>Date Of Bird: Sampang, 01-07-2001</p>
-                    <p>Contact: 085843480959</p>
-                    <p>Address: Jl. Jaksa Agung Suprapto</p>
-                    <p>Regency: Sampang</p>
-                    <p>Province: East Java</p>
-                    <p>Country: Indonesia</p>
+                  <div class="card-group">
+                      <div class="card rounded-0" style="border: none; ">
+                        <div class="card-body" style="background-color: #e45eff; border-radius: 67% 33% 100% 0% / 30% 42% 58% 70% ;">
+                          <h5 class="text-start text-primary fst-italic animate-charcter" style="">work closely with me in the field of application development</h5>
+                          <h1 class="text-start">I'm Software Enginering</h1>
+                          <p class="text-start" style="text-align: justify;">My name is Abdul Goffar, and I am a dedicated computer engineering student with a passion for learning and mastering the intricacies of coding and computer programming. My primary focus lies in the development of both web and mobile applications, areas in which I find immense satisfaction and creative fulfillment.
+                          </p>
+                          <span></span>
+
+                          <!-- <div class="float-start" style="margin-left: -18px;"><button class="button-92" role="button">Download My CV</button></div> -->
+
+                          <div class="float-start">
+                            <button class="btn" type="button">
+                              <strong>DOWNLOAD CV</strong>
+                              <div id="container-stars">
+                                <div id="stars"></div>
+                              </div>
+                            
+                              <div id="glow">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                              </div>
+                            </button>
+                          </div>
+
+                          <a href="document/Resume_CV.pdf" download="file"></a>
+
+                        </div>
+                      </div>
+                      <div class="card rounded-0" style="border: none;">
+                          <div class="card-body">
+                              <img src="img/Goffar_2024.jpg" alt="" width="310px" height="310px" style="border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%">
+                          </div>
+                      </div>
                   </div>
+                  <!-- <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(70.069, 62, 243, 1)" offset="0%"></stop><stop stop-color="rgba(220.27, 11, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,110L24,95.3C48,81,96,51,144,58.7C192,66,240,110,288,106.3C336,103,384,51,432,36.7C480,22,528,44,576,47.7C624,51,672,37,720,55C768,73,816,125,864,124.7C912,125,960,73,1008,44C1056,15,1104,7,1152,14.7C1200,22,1248,44,1296,66C1344,88,1392,110,1440,106.3C1488,103,1536,73,1584,51.3C1632,29,1680,15,1728,14.7C1776,15,1824,29,1872,51.3C1920,73,1968,103,2016,102.7C2064,103,2112,73,2160,84.3C2208,95,2256,147,2304,165C2352,183,2400,169,2448,154C2496,139,2544,125,2592,110C2640,95,2688,81,2736,66C2784,51,2832,37,2880,25.7C2928,15,2976,7,3024,14.7C3072,22,3120,44,3168,77C3216,110,3264,154,3312,165C3360,176,3408,154,3432,143L3456,132L3456,220L3432,220C3408,220,3360,220,3312,220C3264,220,3216,220,3168,220C3120,220,3072,220,3024,220C2976,220,2928,220,2880,220C2832,220,2784,220,2736,220C2688,220,2640,220,2592,220C2544,220,2496,220,2448,220C2400,220,2352,220,2304,220C2256,220,2208,220,2160,220C2112,220,2064,220,2016,220C1968,220,1920,220,1872,220C1824,220,1776,220,1728,220C1680,220,1632,220,1584,220C1536,220,1488,220,1440,220C1392,220,1344,220,1296,220C1248,220,1200,220,1152,220C1104,220,1056,220,1008,220C960,220,912,220,864,220C816,220,768,220,720,220C672,220,624,220,576,220C528,220,480,220,432,220C384,220,336,220,288,220C240,220,192,220,144,220C96,220,48,220,24,220L0,220Z"></path></svg> -->
+                  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 380" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(70.069, 62, 243, 1)" offset="0%"></stop><stop stop-color="rgba(220.27, 11, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,190L24,164.7C48,139,96,89,144,101.3C192,114,240,190,288,183.7C336,177,384,89,432,63.3C480,38,528,76,576,82.3C624,89,672,63,720,95C768,127,816,215,864,215.3C912,215,960,127,1008,76C1056,25,1104,13,1152,25.3C1200,38,1248,76,1296,114C1344,152,1392,190,1440,183.7C1488,177,1536,127,1584,88.7C1632,51,1680,25,1728,25.3C1776,25,1824,51,1872,88.7C1920,127,1968,177,2016,177.3C2064,177,2112,127,2160,145.7C2208,165,2256,253,2304,285C2352,317,2400,291,2448,266C2496,241,2544,215,2592,190C2640,165,2688,139,2736,114C2784,89,2832,63,2880,44.3C2928,25,2976,13,3024,25.3C3072,38,3120,76,3168,133C3216,190,3264,266,3312,285C3360,304,3408,266,3432,247L3456,228L3456,380L3432,380C3408,380,3360,380,3312,380C3264,380,3216,380,3168,380C3120,380,3072,380,3024,380C2976,380,2928,380,2880,380C2832,380,2784,380,2736,380C2688,380,2640,380,2592,380C2544,380,2496,380,2448,380C2400,380,2352,380,2304,380C2256,380,2208,380,2160,380C2112,380,2064,380,2016,380C1968,380,1920,380,1872,380C1824,380,1776,380,1728,380C1680,380,1632,380,1584,380C1536,380,1488,380,1440,380C1392,380,1344,380,1296,380C1248,380,1200,380,1152,380C1104,380,1056,380,1008,380C960,380,912,380,864,380C816,380,768,380,720,380C672,380,624,380,576,380C528,380,480,380,432,380C384,380,336,380,288,380C240,380,192,380,144,380C96,380,48,380,24,380L0,380Z"></path></svg>
+              </div>
+              
+              
+              <div class="card-footer text-muted">
+                <div class="social-buttons">
+                  <a href="https://github.com/abdlgoffar" class="social-button github">
+                    <svg class="cf-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19"><path d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z"></path></svg>
+                      </a>
+                      <a href="https://linkedin.com/in/goffar-489944271%7C" class="social-button linkedin">
+                        <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Icons" stroke="none" stroke-width="1">
+                            <g transform="translate(-702.000000, -265.000000)">
+                                <path d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z" id="LinkedIn">
+                    </path>
+                            </g>
+                        </g>
+                    </svg>
+                  </a>
+                  <a href="https://www.facebook.com/abd.gofar.5492" class="social-button facebook">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
+                <g id="XMLID_834_">
+                  <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+                    c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+                    V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+                    C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+                    c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"></path>
+                </g>
+                </svg>
+                  </a>
+                  <a href="https://www.instagram.com/abdlgoffar" class="social-button instagram">
+                    <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1">
+                        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+                
+                </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+  <!-- section row two -->
+  <div class="row" id="about-target">
+    <div class="col-sm-12">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+        <div class="col">
+          <div class="card h-100 rounded-0"  style="border: none;">
+            <div class="card-body">
+              <div class="card-skills col-me"  style="margin: auto;  box-shadow: rgb(143, 5, 255) 0px 0px 0px 2px, rgb(39, 32, 255) 0px 4px 6px -1px, rgb(116, 61, 255) 0px 1px 0px inset;">
+                <div class="header">About Me</div>
+                <div class="body">
+                  <p>Name: Abdul Goffar</p>
+                  <p>Date Of Bird: Sampang, 01-07-2001</p>
+                  <p>Contact: 085843480959</p>
+                  <p>Address: Jl. Jaksa Agung Suprapto</p>
+                  <p>Regency: Sampang</p>
+                  <p>Province: East Java</p>
+                  <p>Country: Indonesia</p>
                 </div>
               </div>
             </div>
           </div>
-    
-          <div class="col">
-            <div class="card h-100 rounded-0"  style="border: none;">
-              <div class="card-body">
-                <div class="card-skills col-me" style="margin: auto;">
-                  <div class="header">Programming Languange Skill</div>
-                  <div class="body">
-                    <div class="skill">
-                      <div class="skill-name">HTML</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 90%"></div>
-                      </div>
-                      <div class="skill-percent-number">80%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">CSS</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 80%"></div>
-                      </div>
-                      <div class="skill-percent-number">70%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">JavaScript</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 75%"></div>
-                      </div>
-                      <div class="skill-percent-number">50%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">Dart</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 75%"></div>
-                      </div>
-                      <div class="skill-percent-number">50%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">Java</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 90%"></div>
-                      </div>
-                      <div class="skill-percent-number">80%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">Kotlin</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 80%"></div>
-                      </div>
-                      <div class="skill-percent-number">70%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">PHP</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 90%"></div>
-                      </div>
-                      <div class="skill-percent-number">80%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">Typescript</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 75%"></div>
-                      </div>
-                      <div class="skill-percent-number">50%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="col">
-            <div class="card h-100 rounded-0"  style="border: none;">
-              <div class="card-body">
-                <div class="card-skills col-me" style="margin: auto;">
-                  <div class="header">Framework Skill</div>
-                  <div class="body">
-                    <div class="skill">
-                      <div class="skill-name">Spring Boot</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 90%"></div>
-                      </div>
-                      <div class="skill-percent-number">80%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">React</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 75%"></div>
-                      </div>
-                      <div class="skill-percent-number">50%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">Laravel</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 90%"></div>
-                      </div>
-                      <div class="skill-percent-number">80%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">Tailwind Css</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 90%"></div>
-                      </div>
-                      <div class="skill-percent-number">80%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">Bootstrap Css</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 90%"></div>
-                      </div>
-                      <div class="skill-percent-number">80%</div>
-                    </div>
-                    <div class="skill">
-                      <div class="skill-name">Android</div>
-                      <div class="skill-level">
-                        <div class="skill-percent" style="width: 75%"></div>
-                      </div>
-                      <div class="skill-percent-number">50%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
+  
+        <div class="col">
+          <div class="card h-100 rounded-0" style="border: none;">
+            <div class="card-body">
+              <div class="card-skills col-me"  style="margin: auto;  box-shadow: rgb(143, 5, 255) 0px 0px 0px 2px, rgb(39, 32, 255) 0px 4px 6px -1px, rgb(116, 61, 255) 0px 1px 0px inset;">
+                <div class="header">Programming Language Skill</div>
+                <div class="body" id="programming-skills-container">
+                  <!-- Skills will be dynamically inserted here by JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100 rounded-0" style="border: none;">
+            <div class="card-body">
+              <div class="card-skills col-me"  style="margin: auto;  box-shadow: rgb(143, 5, 255) 0px 0px 0px 2px, rgb(39, 32, 255) 0px 4px 6px -1px, rgb(116, 61, 255) 0px 1px 0px inset;">
+                <div class="header">Framework Skill</div>
+                <div class="body" id="framework-skills-container">
+                  <!-- Skills will be dynamically inserted here by JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
       </div>
     </div>
-    <!-- section footer -->
-    <div class="row mt-5">
-      <div class="col-sm-12 justify-content-md-center text-center text-light py-2" style="background-color: rgb(64, 64, 255);">
-        <h2 class="fs-6 pt-3">ABDUL GOFFAR: 2023</h2>
-      </div>
+  </div>
+  <!-- section footer -->
+  <div class="row mt-5">
+    <div class="col-sm-12 justify-content-md-center text-center text-light py-2" style="background-color: rgb(95, 26, 255);">
+      <h2 class="fs-6 pt-3">BY ABDUL GOFFAR 2023</h2>
     </div>
+  </div>
+    </div>
+   
+
+
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="js/script.js">
