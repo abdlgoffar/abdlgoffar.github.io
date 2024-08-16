@@ -12,7 +12,7 @@ function downloadFile(url, fileName) {
     });
 };
 document.querySelector('button').onclick = function () {
-  downloadFile('document/CV Goffar.pdf', 'CV-Abdul-Goffar.pdf');
+  downloadFile('document/Abdul Goffar CV 2024.pdf', 'Abdul Goffar CV 2024.pdf');
 }
 
 
